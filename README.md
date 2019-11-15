@@ -1,2 +1,2 @@
-# todo-list-app-with-django
-A full-stack web application for managing/tracking your todos With Python Django.
+# TO-DO LIST (DJANGO)
+A full-stack web application for managing/tracking your to-dos.
