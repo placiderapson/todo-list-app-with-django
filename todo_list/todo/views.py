@@ -10,7 +10,7 @@ def index(request):
     form = TodoForm()
 
     context = {'todo_list': todo_list, 'form': form}
-    
+
     return render(request, 'todo/index.html', context)
 
 @require_POST
@@ -22,3 +22,12 @@ def add_todo(request):
         new_todo.save()
 
     return redirect('index')
+
+def complete_todo(request, todo_id):
+    todo = Todo.objects.get(pk=todo_id)
+    todo.complete = True
+    todo.save()
+
+    return redirect('index')
+
+
