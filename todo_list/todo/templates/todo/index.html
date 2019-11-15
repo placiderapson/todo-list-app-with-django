@@ -48,7 +48,11 @@
 
 					<ul class="list-group t20">
 						{% for todo in todo_list %}
-						<li class="list-group-item">{{ todo.text }}</li>
+							{% if todo.complete %}
+								<li class="list-group-item todo-completed">{{ todo.text }}</li>
+							{%else%}
+								<li class="list-group-item">{{ todo.text }}</li>
+							{% endif %}
 						{% endfor %}
 						<li class="list-group-item">Read my favorite book.</li>
 						<li class="list-group-item todo-completed">Watch my favorite movie.</li>
