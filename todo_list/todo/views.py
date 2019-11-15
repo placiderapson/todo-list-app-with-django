@@ -32,7 +32,7 @@ def complete_todo(request, todo_id):
 
 
 def delete_completed(request):
-    completed_todos = Todo.objects.filter(complete__exact=True).delete()
+    Todo.objects.filter(complete__exact=True).delete()
 
     return redirect('index')
 
