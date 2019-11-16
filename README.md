@@ -9,6 +9,12 @@ A full-stack web application for managing/tracking your to-dos.
 $ git clone https://github.com/placideirandora/todo-list-app-with-django
 ```
 
+### Install Python Extension
+
+```
+$ Open the vscode extensions tab, find and install the Python extension by Microsoft. 
+```
+
 ### Create A Super User
 
 ```
@@ -24,7 +30,7 @@ $ python3 manage.py createsuperuser
 ### Start The Server
 
 ```
-$ python3 manage.py startserver
+$ python3 manage.py runserver
 ```
 ```
 $ navigate to 'http://localhost:8000/' to visit the web app
