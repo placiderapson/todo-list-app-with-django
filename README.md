@@ -6,7 +6,7 @@ A full-stack web application for managing/tracking your to-dos.
 ### Clone The Project
 
 ```
-$ git clone https://github.com/placideirandora/todo-list-app-with-django
+$ git clone https://github.com/placiderapson/todo-list-app-with-django
 ```
 
 ### Install Python Extension
